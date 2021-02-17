@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(255, 228, 196, 0.33);
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 800px 100px;
+    gap: 1%;
+    justify-items: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr 4fr 1fr;
+    gap: 3%;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    margin-top: 2%;
+}
+
+.h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    border: red solid;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.09);
+    color: rgb(47, 189, 0);
+    width: 99%;
+    height: 70%;
+    text-align: center;
+    font-size: 400%;
+    margin-top: 10%;
+}
+
+.win2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.09);
+    color: rgb(189, 0, 0);
+    width: 99%;
+    height: 70%;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 10%;
+}
+
+.reglas {
+    font-size: 130%;
+    text-align: justify;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.inputText {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    grid-template-columns: 2fr 1fr 1fr;
+    font-size: xx-large;
+    /* background: rgba(196, 195, 195, 0.433); */
+}
+
+.msnInt {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    grid-template-columns: 1fr;
+    font-size: xx-large;
+    margin: 3% 3%;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: -15%;
+}
+
+#input {
+    font-size: xx-large;
+    width: 70%;
+    height: 65%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 5%;
+    background-color: rgb(0, 0, 0);
+    border: red solid;
+    margin-left: -10%;
+}
+
+#button {
+    font-size: large;
+    cursor: pointer;
+    width: 75%;
+    height: 75%;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#button:hover {
+    font-size: x-large;
+    color: rgb(211, 0, 0);
+    width: 90%;
+    height: 75%;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    border: red solid;
+}
+
+.mensajes {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10%;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 130%;
+}
+
+.coment {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.775);
+    padding: 1% 5%;
+    letter-spacing: 1.3px;
+}
+
+.intentos {
+    color: rgb(45, 2, 199);
+    text-align: right;
+}
+
+footer {
+    align-self: end;
+}
+
+.a {
+    text-decoration: none;
+}
+
+#reinicio{
+    text-align: center;
+    align-items: center;
+}
+
+@media (max-width:400px){
+
+    .contenedor {
+        display: grid;
+        grid-template-rows: 570px 50px;
+        margin-top: -15%;
+    }
+    
+    main {
+        display: grid;
+        grid-template-rows: 2fr 3fr 2fr 4fr 1fr;
+        gap: 3%;
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+        height: 70%;
+        margin-top: 2%;
+    }
+    
+    .h1 {
+        width: 110%;
+        height: 90%;        
+        letter-spacing: 1px;
+        font-size: 110%;
+    }
+    
+    .win {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.09);
+        color: rgb(47, 189, 0);
+        width: 99%;
+        height: 80%;
+        text-align: center;
+        font-size: 250%;
+        margin-top: 20%;
+        margin-bottom: 20%;;
+    }
+    
+    .win2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.09);
+        color: rgb(189, 0, 0);
+        width: 99%;
+        height: 70%;
+        text-align: center;
+        font-size: 300%;
+        margin-top: 10%;
+    }
+    
+    .reglas {
+        font-size: 100%;
+        text-align: justify;
+        letter-spacing: 1px;
+        width: 99%;
+    }
+    
+    .inputText {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 120%;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        font-size: xx-large;
+    }
+    
+     .msnInt {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        grid-template-columns: 1fr;
+        font-size: large;
+        margin: 3% 3%;
+    }
+    
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0%;
+        font-size: 50%;
+    }
+    
+    #input {
+        font-size: x-large;
+        width: 30%;
+        height: 75%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        border-radius: 5%;
+        background-color: rgb(0, 0, 0);
+        border: red solid;
+        margin-left: 0%;
+    }
+    
+    #button {
+        font-size: large;
+        cursor: pointer;
+        width: 45%;
+        height: 100%;
+        border-radius: 5%;
+        text-align: center;
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    
+    #button:hover {
+        font-size: large;
+        color: rgb(211, 0, 0);
+        width: 50%;
+        height: 100%;
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+        border: red solid;
+    }
+    
+    .mensajes {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5%;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+    }
+    
+  
+}

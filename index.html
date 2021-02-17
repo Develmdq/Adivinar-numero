@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADIVINA EL NUMERO</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <div class="contenedor">
+    <main>
+      <h1 class="h1 animate__animated animate__tada animate__repeat-3">¿TE ANIMAS A ADIVINAR EL NÚMERO?</h1>
+      <p class='reglas'>El juego consiste en adivinar un número que hemos elegido al azar entre el 1 y el 100.<br>Te
+        daremos una ayuda en cada intento indicándote si el número que ingresaste es más alto o más bajo que el
+        buscado. Tienes 10 intentos para lograrlo. ADELANTE!!</p>
+      <div class="inputText">
+        <label>Ingresa un número:</label><input type="text" id="input" maxlength="3">
+        <button id="button">Comprobar</button>
+      </div>
+      <div class="mensajes">
+        <p class="comentario"></p>
+        <p class="intentos"></p>
+        <p class="consejo"></p>
+      </div>
+      <div class="reinicio"></div>
+    </main>
+    <footer>
+      <a href="https://github.com/Develmdq" target="_blank" class="a text-muted">Edición <i>por</i> Develmdq(2020)</a>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+  <script src="js/js.js"></script>
+
+</body>
+
+</html>
